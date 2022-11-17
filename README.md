@@ -1,3 +1,5 @@
+# Assignment 7
+
 ## Stateless vs Stateful Widget
 
 A stateless Widget is a widget that does not change, it stays the same throughout the execution of the application. Examples of a stateless widget are Text, Icon, and IconButton
@@ -50,3 +52,54 @@ Const value is assigned at compile time
 - modify the floatingActionButton of scaffold to be a row containig 2 FloatingActionButton widget, one calls the _decrementCounter function and the other the _incrementCounter function
 - encapsulate the decrement button with the Visibility widget that hides the button if the counters value is 0
 
+# Assignment 8
+
+## Difference between Navigator.push and Navigator.pushReplacement
+
+Navigator.pushReplacement Replaces the previous top of the stack with the new route. Navigator.push only pushes it
+## Widgets Used
+
+### Card
+
+### FutureBuilder
+
+FutureBuilder asychronously builds widgets.
+
+### Form
+
+Create a form
+
+### TextFormField
+
+TextFormField adds a field for the user to input text
+
+### DropdownButton
+
+Adds a dropdown button to a page
+
+### DropdownMenuItem
+
+Items for thedrop down button
+
+### SingleChildScrollView
+
+Make the widget scrollable
+
+## Event types in flutter
+
+- onTap
+- onPressed
+- onChanged
+- onSaved
+- onPointerCancel
+- onPointerDown
+- onPointerHover
+- onPointerMove
+- onPointerPanZoomEnd
+- onPointerPanZoomStart
+- onPointerPanZoomUpdate
+- onPointerSignal
+- onPointerUp
+## How Navigator works in flutter
+
+Navigation history in flutter is saved as a stack. when switching to a new page, the Navigator pushes the page onto the stack using Navigator.push or replaces the top of the stack when using Navigator.pushReplacement. when returning to a previous screen, the top of the stack is popped and the previous page becomes the top of the stack.
