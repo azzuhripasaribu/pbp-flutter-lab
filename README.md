@@ -103,3 +103,22 @@ Make the widget scrollable
 ## How Navigator works in flutter
 
 Navigation history in flutter is saved as a stack. when switching to a new page, the Navigator pushes the page onto the stack using Navigator.push or replaces the top of the stack when using Navigator.pushReplacement. when returning to a previous screen, the top of the stack is popped and the previous page becomes the top of the stack.
+
+# Assignment 9
+
+## Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?
+
+Yes, we can. however the retrieved json will be in the form of a string. as such, it is better to create a model first.
+
+## List the widgets that you used in this project and explain their functions.
+
+### FutureBuilder
+
+FutureBuilder asychronously builds widgets.
+### Gesture Dectetor
+
+Detects user gesture
+
+## Explain the mechanism of retrieving data from json so it can be shown in Flutter.
+
+Flutter sends an HTTP get request to a specified api endpoint which returns a list of json formatted object. we can then map this json object into a flutter model and access it's value to show in our app.
